@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to bottom, #192653, #131d41);
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.feature > div:first-child:before{
+  content: '';
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url('../img/pace.png');
+  background-size: cover;
+}
+
+.feature > div:last-child::before{
+  content: '';
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url('../img/commend.png');
+  background-size: cover;
+}
